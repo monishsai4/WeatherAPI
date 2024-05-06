@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Kode+Mono:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.colorme {
+  background-color: #007a78;
+  color: #ffc745;
+}
+.colorme1 {
+  background-color: #ffc745;
+  color: black;
+  border-radius: 10px;
+}
+.colorme11 {
+  background-color: #ffc745;
+  color: black;
+  border-radius: 10px;
+  height: 310px;
+}
+.colorme12 {
+  background-color: #ffc745;
+  color: black;
+  border-radius: 10px;
+  height: 100px;
+}
+.txtcolor {
+  color: #20211a;
+}
+.colorme13 {
+  background-color: #ffc745;
+  color: black;
+  border-radius: 10px;
+  height: 70px;
+}
+.colorme2 {
+  background-color: #000000;
+  color: white;
+}
+.content {
+  display: inline-block;
+}
+.content1 {
+  justify-content: center;
+  text-align: center;
+}
+.colorme4 {
+  background-color: #ffc745;
+  color: black;
+  border-radius: 10px;
+  width: 52px;
+  height: 45px;
+  justify-content: center;
+  text-align: center;
+}
+.makeeminline {
+  display: inline;
+}
+.custom-search-input {
+  width: 337px; /* Adjust width as needed */
+  border-radius: 10px; /* Rounded corners */
+  padding: 11px; /* Add padding for better appearance */
+}

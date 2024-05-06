@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <!-- linking style sheet  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- linking bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="colorme">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col-3 ml-4 mr-4">
+              <div class="colorme1">
+                <div class="content1">
+                  <img src="img/Clouds.png" alt="Clouds" class="p-2" />
+                  <h4 class="content pt-2">Weather</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-7 pl-4 pr-4">
+              <div class="colorme1">
+                <form class="weatherForm">
+                  <input
+                    class="custom-search-input mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    id="inputValue"
+                  />
+                  <button class="btn colorme2" id="searchBtn" type="submit">
+                    <h5>Search</h5>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-1 content1">
+              <div class="colorme4">
+                <img
+                  src="img/Setting.png"
+                  alt="Setting"
+                  width="24px"
+                  height="24px"
+                  class="m-2"
+                />
+              </div>
+            </div>
+            <div class="col-1 content1">
+              <div class="colorme4">
+                <img
+                  src="img/moon.png"
+                  alt="moon"
+                  width="24px"
+                  height="24px"
+                  class="m-2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 white-text">
+            <h3 class="white-text">Today Overview</h3>
+          </div>
+          <div class="row mt-5 text-center">
+            <div class="col m-1">
+              <div class="colorme11 pt-4">
+                <div class="pt-3" id="IMg"><h1>🤬</h1></div>
+                <div class="pt-4" id="GetTemp">79C</div>
+                <div class="pt-2" id="getType">Sunny</div>
+                <div>_____________________</div>
+                <div class="pt-3" id="Locate">Location</div>
+                <div class="errorDisplay"></div>
+                <div class="pt-3" id="DateDay">29 march</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row m-1">
+                <div class="colorme12">
+                  <div class="container">
+                    <div class="row mt-4">
+                      <div class="col-md-4">
+                        <img
+                          src="img/Windsock.png"
+                          alt="Image"
+                          width="30px"
+                          height="30px"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="txtcolor">WindSpeed</p>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-1">
+                <div class="colorme12">
+                  <div class="container">
+                    <div class="row mt-4">
+                      <div class="col-md-4">
+                        <img
+                          src="img/Humidity.png"
+                          alt="Image"
+                          width="30px"
+                          height="30px"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="txtcolor">Humidity</p>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-1">
+                <div class="colorme12">
+                  <div class="container">
+                    <div class="row mt-4">
+                      <div class="col-md-4">
+                        <img
+                          src="img/Sunrise.png"
+                          alt="Image"
+                          width="30px"
+                          height="30px"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="txtcolor">Sunrise</p>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row m-1">
+                <div class="colorme12">
+                  <div class="container">
+                    <div class="row mt-4">
+                      <div class="col-md-4">
+                        <img
+                          src="img/Pressure.png"
+                          alt="Image"
+                          width="30px"
+                          height="30px"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="txtcolor">Pressure</p>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-1">
+                <div class="colorme12">
+                  <div class="container">
+                    <div class="row mt-4">
+                      <div class="col-md-4">
+                        <img
+                          src="img/Visiblity.png"
+                          alt="Image"
+                          width="30px"
+                          height="30px"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="txtcolor">Visiblity</p>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-1">
+                <div class="colorme12">
+                  <div class="container">
+                    <div class="row mt-4">
+                      <div class="col-md-4">
+                        <img
+                          src="img/Sunset.png"
+                          alt="Image"
+                          width="30px"
+                          height="30px"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <p class="txtcolor">Sunset</p>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col ml-1 mr-1"><div class="colorme11"></div></div>
+          </div>
+          <div class="colorme13 mt-4">hi</div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+    <!-- link javascript  -->
+    <script src="script.js"></script>
+  </body>
+</html>
